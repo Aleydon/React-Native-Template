@@ -2,8 +2,16 @@
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
     "strict": true,
+    "baseUrl": "./app" /* Specify the base directory to resolve non-relative module names. */,
     "paths": {
-      "@/*": ["./*"]
+      "@app/*": ["./app/*"],
+      "@components/*": ["components/*"],
+      "@constants/*": ["constants/*"],
+      "@utils/*": ["utils/*"],
+      "@hooks/*": ["hooks/*"],
+      "@assets/*": ["assets/*"],
+      "@services/*": ["services/*"],
+      "@context/*": ["context/*"]
     }
   },
   "include": [
@@ -11,6 +19,10 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts",
-    "nativewind-env.d.ts"
+    "nativewind-env.d.ts",
+    "jest.config.js",
+    "tailwind.config.js",
+    "metro.config.js",
+    "babel.config.js"
   ]
 }
