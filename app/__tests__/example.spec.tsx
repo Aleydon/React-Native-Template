@@ -4,7 +4,7 @@ import App from '..';
 
 const sum = (a: number, b: number) => a + b;
 
-describe('sum', () => {
+describe('Test example', () => {
   it('adds 1 + 2 to equal 3', () => {
     expect(sum(1, 2)).toBe(3);
   });
