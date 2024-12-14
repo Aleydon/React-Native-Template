@@ -76,14 +76,14 @@
       "@testing-library/jest-native/extend-expect"
     ],
     "moduleNameMapper": {
-      "^@app/(.*)$": "<rootDir>/app/$1",
-      "^@components/(.*)$": "<rootDir>/app/components/$1",
-      "^@constants/(.*)$": "<rootDir>/app/constants/$1",
-      "^@utils/(.*)$": "<rootDir>/app/utils/$1",
-      "^@hooks/(.*)$": "<rootDir>/app/hooks/$1",
-      "^@assets/(.*)$": "<rootDir>/app/assets/$1",
-      "^@services/(.*)$": "<rootDir>/app/services/$1",
-      "^@contexts/(.*)$": "<rootDir>/app/contexts/$1"
+      "^@src/(.*)$": "<rootDir>/src/$1",
+      "^@components/(.*)$": "<rootDir>/src/components/$1",
+      "^@constants/(.*)$": "<rootDir>/src/constants/$1",
+      "^@utils/(.*)$": "<rootDir>/src/utils/$1",
+      "^@hooks/(.*)$": "<rootDir>/src/hooks/$1",
+      "^@assets/(.*)$": "<rootDir>/src/assets/$1",
+      "^@services/(.*)$": "<rootDir>/src/services/$1",
+      "^@contexts/(.*)$": "<rootDir>/src/contexts/$1"
     }
   }
 }

@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react-native';
 
-import App from '..';
+import App from '@src/app';
 
 const sum = (a: number, b: number) => a + b;
 
