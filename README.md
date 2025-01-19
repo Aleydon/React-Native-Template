@@ -2,7 +2,11 @@
 
 <p align="center">
   <br>
+<<<<<<< HEAD
   <img width="800" height="1000" src="./assets/images/app-home-screenshot.png" alt="logo of Next14 repository">
+=======
+  ![App-Home](https://github.com/Aleydon/React-Native-Template/blob/Aleydon/assets/images/app-home.gif)
+>>>>>>> Aleydon
   <br>
   <br>
 </p>
@@ -85,7 +89,15 @@ import { render } from '@testing-library/react-native';
 import Home from 'src/app/(tabs)';
 
 describe('Home Test', () => {
+<<<<<<< HEAD
   it('should render App', () => {
+=======
+  it('should render Home', () => {
+    const homeComponent = render(<Home />);
+    expect(homeComponent).toBeDefined();
+  });
+  it('should get text on screen', () => {
+>>>>>>> Aleydon
     const { getByText } = render(<Home />);
     const text = getByText('React Native Template');
     expect(text).toBeDefined();
