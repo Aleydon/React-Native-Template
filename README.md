@@ -2,7 +2,7 @@
 
 <p align="center">
   <br>
-  ![App-Home](https://github.com/Aleydon/React-Native-Template/blob/Aleydon/assets/images/app-home.gif)
+  	<img src="/assets/images/app-home.gif">
   <br>
   <br>
 </p>
