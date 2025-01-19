@@ -28,16 +28,15 @@ Expo: :link: https://docs.expo.dev/
 <h2>Relative Paths Config:</h2>
 
 ```sh
-	"baseUrl": "./app"
+  "baseUrl": "."
     "paths": {
-      "@app/*": ["./app/*"],
-      "@components/*": ["components/*"],
-      "@constants/*": ["constants/*"],
-      "@utils/*": ["utils/*"],
-      "@hooks/*": ["hooks/*"],
-      "@assets/*": ["assets/*"],
-      "@services/*": ["services/*"],
-      "@context/*": ["context/*"]
+      "@components/*": ["src/components/*"],
+      "@constants/*": ["src/constants/*"],
+      "@utils/*": ["src/utils/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@assets/*": ["src/assets/*"],
+      "@services/*": ["src/services/*"],
+      "@context/*": ["src/context/*"]
     }
 ```
 
@@ -78,24 +77,21 @@ You can start developing by editing the files inside the **app** directory. This
 npm run test or npm run test:watch
 ```
 
-It has an example of tests with Jest + React-Native-Testing-Library in _app/**tests**/example.spec.tsx_
+It has an example of tests with Jest + React-Native-Testing-Library in _app/**tests**/home.spec.tsx_
 
 ```ts
 import { render } from '@testing-library/react-native';
 
-import App from '..';
+import Home from 'src/app/(tabs)';
 
-const sum = (a: number, b: number) => a + b;
-
-describe('Test example', () => {
-  it('sum correctly', () => {
-    expect(sum(1, 2)).toBe(3);
-  });
-
+describe('Home Test', () => {
   it('should render App', () => {
-    render(<App />);
+    const { getByText } = render(<Home />);
+    const text = getByText('React Native Template');
+    expect(text).toBeDefined();
   });
 });
+
 ```
 
 <h2>Test Running:</h2>
