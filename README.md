@@ -2,7 +2,7 @@
 
 <p align="center">
   <br>
-  	<img src="/assets/images/app-home.gif">
+  	<img height="100" src="/assets/images/app-home.gif">
   <br>
   <br>
 </p>
