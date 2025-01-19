@@ -2,7 +2,11 @@
 
 <p align="center">
   <br>
+<<<<<<< HEAD
   <img height="100"  src="./assets/images/app-home.gif" alt="App Home">
+=======
+  	<img height="800" width="450" src="/assets/images/app-home.gif">
+>>>>>>> Aleydon
   <br>
   <br>
 </p>
