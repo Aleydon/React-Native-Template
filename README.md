@@ -2,7 +2,7 @@
 
 <p align="center">
   <br>
-  <img width="800" height="1500" src="./assets/images/app-home-screenshot.png" alt="logo of Next14 repository">
+  <img width="800" height="1000" src="./assets/images/app-home-screenshot.png" alt="logo of Next14 repository">
   <br>
   <br>
 </p>
