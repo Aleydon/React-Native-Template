@@ -2,7 +2,7 @@
 
 <p align="center">
   <br>
-  <img width="800" height="850" src="./assets/images/app-home-screenshot.png" alt="logo of Next14 repository">
+  ![App-Home](https://github.com/Aleydon/React-Native-Template/blob/Aleydon/assets/images/app-home.gif)
   <br>
   <br>
 </p>
