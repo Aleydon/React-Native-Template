@@ -83,17 +83,17 @@ It has an example of tests with Jest + React-Native-Testing-Library in _app/**te
 ```ts
 import { render } from '@testing-library/react-native';
 
-import App from '..';
+import Home from 'src/app/(tabs)';
 
-const sum = (a: number, b: number) => a + b;
-
-describe('Test example', () => {
-  it('sum correctly', () => {
-    expect(sum(1, 2)).toBe(3);
+describe('Home Test', () => {
+  it('should render Home', () => {
+    const homeComponent = render(<Home />);
+    expect(homeComponent).toBeDefined();
   });
-
-  it('should render App', () => {
-    render(<App />);
+  it('should get text on screen', () => {
+    const { getByText } = render(<Home />);
+    const text = getByText('React Native Template');
+    expect(text).toBeDefined();
   });
 });
 ```
