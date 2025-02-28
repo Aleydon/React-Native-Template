@@ -31,6 +31,7 @@
     "@typescript-eslint/explicit-function-return-type": 0,
     "@typescript-eslint/triple-slash-reference": 0,
     "testing-library/prefer-screen-queries": 0,
-    "testing-library/render-result-naming-convention": 0
+    "testing-library/render-result-naming-convention": 0,
+    "react/no-children-prop": 0
   }
 }
