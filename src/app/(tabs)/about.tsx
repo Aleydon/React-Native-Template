@@ -1,7 +1,6 @@
-import { Button, View } from 'react-native';
+import { TextComponent } from '@/components/Text';
 import { Link } from 'expo-router';
-
-import { TextComponent } from '@components/Text';
+import { Button, View } from 'react-native';
 
 export default function About() {
   return (

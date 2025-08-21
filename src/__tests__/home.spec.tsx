@@ -1,6 +1,6 @@
-import { render } from '@testing-library/react-native';
+import Home from '@/app/(tabs)';
 
-import Home from 'src/app/(tabs)';
+import { render } from '@testing-library/react-native';
 
 describe('Home Test', () => {
   it('should render Home', () => {

@@ -3,6 +3,7 @@
   "main": "expo-router/entry",
   "version": "1.0.0",
   "type": "module",
+  "private": true,
   "scripts": {
     "start": "expo start -c --tunnel",
     "android": "expo start --android -c --tunnel",
@@ -50,7 +51,7 @@
     "@testing-library/react-native": "^12.9.0",
     "@types/jest": "^29.5.14",
     "@types/react": "~19.0.10",
-    "@types/react-test-renderer": "^18.3.1",
+    "@types/react-test-renderer": "^19.0.0",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "ajv": "^7.2.4",
     "eslint": "^9.33.0",
@@ -69,25 +70,8 @@
     "jiti": "^2.5.1",
     "metro-react-native-babel-preset": "0.53.1",
     "prettier": "^3.6.2",
-    "react-test-renderer": "18.3.1",
+    "react-test-renderer": "19.0.0",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.40.0"
-  },
-  "private": true,
-  "jest": {
-    "preset": "jest-expo",
-    "setupFilesAfterEnv": [
-      "@testing-library/jest-native/extend-expect"
-    ],
-    "moduleNameMapper": {
-      "^src/(.*)$": "<rootDir>/src/$1",
-      "^@components/(.*)$": "<rootDir>/src/components/$1",
-      "^@constants/(.*)$": "<rootDir>/src/constants/$1",
-      "^@utils/(.*)$": "<rootDir>/src/utils/$1",
-      "^@hooks/(.*)$": "<rootDir>/src/hooks/$1",
-      "^@assets/(.*)$": "<rootDir>/src/assets/$1",
-      "^@services/(.*)$": "<rootDir>/src/services/$1",
-      "^@contexts/(.*)$": "<rootDir>/src/contexts/$1"
-    }
   }
 }

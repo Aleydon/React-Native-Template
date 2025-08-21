@@ -4,13 +4,7 @@
     "baseUrl": ".",
     "module": "esnext",
     "paths": {
-      "@components/*": ["src/components/*"],
-      "@constants/*": ["src/constants/*"],
-      "@utils/*": ["src/utils/*"],
-      "@hooks/*": ["src/hooks/*"],
-      "@assets/*": ["src/assets/*"],
-      "@services/*": ["src/services/*"],
-      "@context/*": ["src/context/*"]
+      "@/*": ["./src/*"]
     }
   },
   "include": [

@@ -1,6 +1,4 @@
-import { Slot } from 'expo-router';
 import {
-  useFonts,
   Inter_100Thin,
   Inter_200ExtraLight,
   Inter_300Light,
@@ -9,11 +7,13 @@ import {
   Inter_600SemiBold,
   Inter_700Bold,
   Inter_800ExtraBold,
-  Inter_900Black
+  Inter_900Black,
+  useFonts
 } from '@expo-google-fonts/inter';
+import { Slot } from 'expo-router';
 
+import Loading from '@/components/Loading';
 import './global.css';
-import Loading from '@components/Loading';
 
 export default function RootLayout() {
   const [fontsIsLoaded] = useFonts({

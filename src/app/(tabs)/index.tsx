@@ -1,6 +1,5 @@
+import { TextComponent } from '@/components/Text';
 import { View } from 'react-native';
-
-import { TextComponent } from '@components/Text';
 
 export default function Home() {
   return (
