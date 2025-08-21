@@ -1,8 +1,8 @@
 {
-  "extends": "expo/tsconfig.base",
   "compilerOptions": {
     "strict": true,
-    "baseUrl": "." /* Specify the base directory to resolve non-relative module names. */,
+    "baseUrl": ".",
+    "module": "esnext",
     "paths": {
       "@components/*": ["src/components/*"],
       "@constants/*": ["src/constants/*"],
@@ -21,7 +21,8 @@
     "nativewind-env.d.ts",
     "jest.config.js",
     "tailwind.config.js",
-    "metro.config.js",
+    "metro.config.mjs",
     "babel.config.js"
-  ]
+  ],
+  "extends": "expo/tsconfig.base"
 }
