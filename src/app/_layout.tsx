@@ -1,3 +1,5 @@
+import './global.css';
+
 import {
   Inter_100Thin,
   Inter_200ExtraLight,
@@ -13,7 +15,6 @@ import {
 import { Slot } from 'expo-router';
 
 import Loading from '@/components/Loading';
-import './global.css';
 
 export default function RootLayout() {
   const [fontsIsLoaded] = useFonts({

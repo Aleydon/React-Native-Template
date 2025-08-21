@@ -5,5 +5,5 @@ interface TextComponentProps {
 }
 
 export function TextComponent({ children }: TextComponentProps) {
-  return <Text className="text-2xl font-medium">{children}</Text>;
+  return <Text className="font-medium text-2xl">{children}</Text>;
 }

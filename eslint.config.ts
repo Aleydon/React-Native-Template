@@ -1,8 +1,9 @@
 import js from '@eslint/js';
+import { defineConfig } from 'eslint/config';
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 import pluginReact from 'eslint-plugin-react';
+import simpleImportSort from 'eslint-plugin-simple-import-sort';
 import testingLibrary from 'eslint-plugin-testing-library';
-import { defineConfig } from 'eslint/config';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
@@ -26,9 +27,14 @@ export default defineConfig([
   eslintPluginPrettierRecommended,
 
   {
-    plugins: { 'testing-library': testingLibrary },
+    plugins: {
+      'testing-library': testingLibrary,
+      'simple-import-sort': simpleImportSort
+    },
     rules: {
-      ...testingLibrary.configs.react.rules
+      ...testingLibrary.configs.react.rules,
+      'simple-import-sort/imports': 'error',
+      'simple-import-sort/exports': 'error'
     }
   },
 
