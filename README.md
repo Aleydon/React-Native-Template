@@ -1,16 +1,6 @@
 <h1 align="center">:iphone: React Native Template :iphone:</h1>
 
-<<<<<<< HEAD
-
-<p align="center">
-  <br>
-  	<img height="750" width="430" src="/assets/images/app-home.gif">
-  <br>
-  <br>
-</p>
-=======
 A robust and professional React Native template with Expo, Nativewind, Jest, Testing Library, CommitLint, and more.
->>>>>>> Aleydon
 
 ## ✨ Features
 
@@ -35,23 +25,9 @@ A robust and professional React Native template with Expo, Nativewind, Jest, Tes
 
 1. **Clone the repository:**
 
-<<<<<<< HEAD
-
-````sh
-  "baseUrl": "."
-    "paths": {
-      "@components/*": ["src/components/*"],
-      "@constants/*": ["src/constants/*"],
-      "@utils/*": ["src/utils/*"],
-      "@hooks/*": ["src/hooks/*"],
-      "@assets/*": ["src/assets/*"],
-      "@services/*": ["src/services/*"],
-      "@context/*": ["src/context/*"]
-    }
-=======
    ```bash
    git clone https://github.com/Aleydon/react-native-template.git
-````
+   ```
 
 2. **Navigate to the project directory:**
 
@@ -104,7 +80,6 @@ In the project directory, you can run:
 ├── .jest
 │   └── jest.setup.js
 ...
->>>>>>> Aleydon
 ```
 
 - **`src/app`**: Contains the application's routes, following the Expo Router convention.
@@ -144,45 +119,4 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 
 ## 📝 License
 
-<<<<<<< HEAD
-
-<h2>Tests:</h2>
-
-- How to run tests:
-
-```sh
-npm run test or npm run test:watch
-```
-
-It has an example of tests with Jest + React-Native-Testing-Library in _app/**tests**/home.spec.tsx_
-
-```ts
-import { render } from '@testing-library/react-native';
-
-import Home from 'src/app/(tabs)';
-
-describe('Home Test', () => {
-  it('should render Home', () => {
-    const homeComponent = render(<Home />);
-    expect(homeComponent).toBeDefined();
-  });
-
-  it('should get text on screen', () => {
-    const { getByText } = render(<Home />);
-    const text = getByText('React Native Template');
-    expect(text).toBeDefined();
-  });
-});
-
-```
-
-<h2>Test Running:</h2>
-<p align="center">
-  <br>
-  <img width="1200" src="./assets/images/rn-jest-test.png" alt="Image test running">
-  <br>
-  <br>
-</p>
-=======
 This project is [MIT](./LICENSE) licensed.
->>>>>>> Aleydon
