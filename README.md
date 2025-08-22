@@ -1,107 +1,122 @@
-<h2 align='center'>:earth_americas: React Native Template (Expo) :earth_americas:</h2>
+<h1 align="center">:iphone: React Native Template :iphone:</h1>
 
-<p align="center">
-  <br>
-  	<img height="800" width="450" src="/assets/images/app-home.gif">
-  <br>
-  <br>
-</p>
+A robust and professional React Native template with Expo, Nativewind, Jest, Testing Library, CommitLint, and more.
 
-## :pushpin: Requirements: :pushpin:
+## ✨ Features
 
-NodeJs: :link: https://nodejs.org/en/
-<br />
-Expo: :link: https://docs.expo.dev/
+- **React Native with Expo:** A framework and a platform for universal React applications.
+- **Expo Router:** File-based routing for React Native and web applications.
+- **Nativewind:** Use Tailwind CSS for styling your React Native applications.
+- **Jest & React Native Testing Library:** For writing unit and component tests.
+- **ESLint & Prettier:** For code linting and formatting.
+- **CommitLint & Commitizen:** Enforce conventional commit messages.
+- **Husky:** For running scripts at different stages of the git process.
+- **TypeScript:** For static typing.
+- **Absolute Imports:** For cleaner import statements.
 
----
+## 🚀 Getting Started
 
-<h2>Template configuration:</h2>
+### Prerequisites
 
-- Jest + React Native Testing Library for automated testing. :link: https://jestjs.io/ + https://callstack.github.io/react-native-testing-library/.
-- Eslint + Prettier for code standardization and formatting. :link: https://eslint.org/ + https://prettier.io/.
-- Typescript for typing. :link: https://www.typescriptlang.org/
-- Nativewind for styling components. :link: https://www.nativewind.dev/getting-started/expo-router.
-- HuskyJs for automatically lint your commit messages, code, and run tests upon committing or pushing. :link: https://typicode.github.io/husky/
+- Node.js (v18 or newer)
+- Yarn or npm
 
----
+### Installation
 
-<h2>Relative Paths Config:</h2>
+1. **Clone the repository:**
 
-```sh
-	"baseUrl": "./app"
-    "paths": {
-      "@app/*": ["./app/*"],
-      "@components/*": ["components/*"],
-      "@constants/*": ["constants/*"],
-      "@utils/*": ["utils/*"],
-      "@hooks/*": ["hooks/*"],
-      "@assets/*": ["assets/*"],
-      "@services/*": ["services/*"],
-      "@context/*": ["context/*"]
-    }
+   ```bash
+   git clone https://github.com/Aleydon/react-native-template.git
+   ```
+
+2. **Navigate to the project directory:**
+
+   ```bash
+   cd react-native-template
+   ```
+
+3. **Install the dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+   or
+
+   ```bash
+   yarn install
+   ```
+
+## Available Scripts
+
+In the project directory, you can run:
+
+- `npm start`: Runs the app in development mode with an interactive CLI.
+- `npm run android`: Runs the app on a connected Android device or emulator.
+- `npm run ios`: Runs the app on the iOS simulator.
+- `npm run web`: Runs the app in a web browser.
+- `npm test`: Runs the test suite.
+- `npm run test:watch`: Runs the test suite in watch mode.
+- `npm run lint`: Lints and fixes files.
+- `npm run commit`: A guided commit process to create conventional commits.
+
+## 📁 Folder Structure
+
+```
+.
+├── src
+│   ├── app
+│   │   ├── (tabs)
+│   │   │   ├── _layout.tsx
+│   │   │   ├── about.tsx
+│   │   │   └── index.tsx
+│   │   ├── _layout.tsx
+│   │   └── global.css
+│   ├── components
+│   │   ├── Loading.tsx
+│   │   └── Text.tsx
+│   └── __tests__
+│       └── home.spec.tsx
+├── .jest
+│   └── jest.setup.js
+...
 ```
 
-#### :arrow_forward: Get Started:
+- **`src/app`**: Contains the application's routes, following the Expo Router convention.
+- **`src/components`**: Contains reusable components.
+- **`src/__tests__`**: Contains test files.
+- **`.jest`**: Contains Jest configuration and setup files.
 
-1. Clone this repo
+## ✅ Testing
 
-```sh
-git clone https://github.com/Aleydon/React-Native-Template.git
+This template uses [Jest](https://jestjs.io/) and [React Native Testing Library](https://testing-library.com/docs/react-native/getting-started) for testing.
+
+To run the tests, use the following command:
+
+```bash
+npm test
 ```
 
-2. Install NPM packages
+To run the tests in watch mode, use:
 
-```sh
-npm install or yarn
+```bash
+npm run test:watch
 ```
 
-3.  Run this project
+## 💅 Linting and Formatting
 
-```sh
-npm run start or yarn start
+This project uses [ESLint](https://eslint.org/) for linting and [Prettier](https://prettier.io/) for code formatting.
+
+To lint and fix your files, run:
+
+```bash
+npm run lint
 ```
 
-In the output, you'll find options to open the app in a
+## 🤝 Contributing
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/Aleydon/react-native-template/issues).
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 📝 License
 
-<h2>Tests:</h2>
-
-- How to run tests:
-
-```sh
-npm run test or npm run test:watch
-```
-
-It has an example of tests with Jest + React-Native-Testing-Library in _app/**tests**/example.spec.tsx_
-
-```ts
-import { render } from '@testing-library/react-native';
-
-import Home from 'src/app/(tabs)';
-
-describe('Home Test', () => {
-  it('should render Home', () => {
-    const homeComponent = render(<Home />);
-    expect(homeComponent).toBeDefined();
-  });
-  it('should get text on screen', () => {
-    const { getByText } = render(<Home />);
-    const text = getByText('React Native Template');
-    expect(text).toBeDefined();
-  });
-});
-```
-
-<h2>Test Running:</h2>
-<p align="center">
-  <br>
-  <img width="1200" src="./assets/images/rn-jest-test.png" alt="Image test running">
-  <br>
-  <br>
-</p>
+This project is [MIT](./LICENSE) licensed.
