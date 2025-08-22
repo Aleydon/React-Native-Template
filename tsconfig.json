@@ -1,16 +1,10 @@
 {
-  "extends": "expo/tsconfig.base",
   "compilerOptions": {
     "strict": true,
-    "baseUrl": "." /* Specify the base directory to resolve non-relative module names. */,
+    "baseUrl": ".",
+    "module": "esnext",
     "paths": {
-      "@components/*": ["src/components/*"],
-      "@constants/*": ["src/constants/*"],
-      "@utils/*": ["src/utils/*"],
-      "@hooks/*": ["src/hooks/*"],
-      "@assets/*": ["src/assets/*"],
-      "@services/*": ["src/services/*"],
-      "@context/*": ["src/context/*"]
+      "@/*": ["./src/*"]
     }
   },
   "include": [
@@ -23,5 +17,6 @@
     "tailwind.config.js",
     "metro.config.js",
     "babel.config.js"
-  ]
+  ],
+  "extends": "expo/tsconfig.base"
 }
