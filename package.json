@@ -2,7 +2,6 @@
   "name": "react-native-template",
   "main": "expo-router/entry",
   "version": "1.0.0",
-  "type": "module",
   "private": true,
   "scripts": {
     "start": "expo start -c --tunnel",

@@ -15,7 +15,7 @@
     "nativewind-env.d.ts",
     "jest.config.js",
     "tailwind.config.js",
-    "metro.config.mjs",
+    "metro.config.js",
     "babel.config.js"
   ],
   "extends": "expo/tsconfig.base"
