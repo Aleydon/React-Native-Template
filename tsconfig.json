@@ -1,11 +1,12 @@
 {
   "compilerOptions": {
     "strict": true,
-    "baseUrl": ".",
-    "module": "esnext",
+    "moduleResolution": "nodenext",
+    "module": "nodenext",
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "types": ["node", "jest", "@testing-library/react-native"]
   },
   "include": [
     "**/*.ts",
@@ -16,7 +17,12 @@
     "jest.config.js",
     "tailwind.config.js",
     "metro.config.js",
-    "babel.config.js"
+    "babel.config.js",
+    "src/**/*",
+    "src/__tests__/**/*",
+    ".jest/jest.setup.js",
+    "src/**/*",
+    "tests/**/*"
   ],
   "extends": "expo/tsconfig.base"
 }
