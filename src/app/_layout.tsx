@@ -33,7 +33,7 @@ export default function RootLayout() {
   return (
     <SafeAreaProvider>
       {fontsIsLoaded ? (
-        <SafeAreaView style={{ flex: 1 }}>
+        <SafeAreaView edges={[]} style={{ flex: 1 }}>
           <Slot />
         </SafeAreaView>
       ) : (
