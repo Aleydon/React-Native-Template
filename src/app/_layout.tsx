@@ -13,6 +13,7 @@ import {
   useFonts
 } from '@expo-google-fonts/inter';
 import { Slot } from 'expo-router';
+import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 
 import Loading from '@/components/Loading';
 
@@ -29,5 +30,15 @@ export default function RootLayout() {
     Inter_900Black
   });
 
-  return fontsIsLoaded ? <Slot /> : <Loading />;
+  return (
+    <SafeAreaProvider>
+      {fontsIsLoaded ? (
+        <SafeAreaView style={{ flex: 1 }}>
+          <Slot />
+        </SafeAreaView>
+      ) : (
+        <Loading />
+      )}
+    </SafeAreaProvider>
+  );
 }
