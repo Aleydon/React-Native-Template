@@ -8,7 +8,7 @@
     "android": "expo run:android",
     "ios": "expo run:ios",
     "build:android:apk": "eas build -p android --profile preview",
-    "build:android:local:apk": "NODE_ENV=production eas build -p android --profile preview --local",
+    "build:android:apk:local": "NODE_ENV=production eas build -p android --profile preview --local",
     "build:android:aab": "eas build -p android --profile production",
     "build:ios": "eas build -p ios --profile production",
     "update:prod": "eas update --channel production",
