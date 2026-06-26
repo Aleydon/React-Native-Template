@@ -9,6 +9,9 @@ import tseslint from 'typescript-eslint';
 
 export default defineConfig([
   {
+    ignores: ['dist/**', '.expo/**', 'node_modules/**', '.husky/**', '.jest/**']
+  },
+  {
     files: ['src/**/*.{ts,tsx}'],
     languageOptions: {
       ecmaVersion: 'latest',

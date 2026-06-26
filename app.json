@@ -23,7 +23,7 @@
     },
     "web": {
       "bundler": "metro",
-      "output": "static",
+      "output": "server",
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
@@ -62,7 +62,8 @@
       "react-native-edge-to-edge"
     ],
     "experiments": {
-      "typedRoutes": true
+      "typedRoutes": true,
+      "reactServerFunctions": true
     },
     "extra": {
       "router": {},

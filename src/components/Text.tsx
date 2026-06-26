@@ -2,8 +2,9 @@ import { Text } from 'react-native';
 
 interface TextComponentProps {
   children: React.ReactNode;
+  className?: string;
 }
 
-export function TextComponent({ children }: TextComponentProps) {
-  return <Text className="font-bold text-2xl">{children}</Text>;
+export function TextComponent({ children, className }: TextComponentProps) {
+  return <Text className={className}>{children}</Text>;
 }

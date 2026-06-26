@@ -1,3 +1,5 @@
+'use client';
+
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Tabs } from 'expo-router';
 
